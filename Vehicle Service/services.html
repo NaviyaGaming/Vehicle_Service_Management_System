@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TorquePoint | Vehicle Service Management System</title>
+
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-header">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                <span>⚡</span>
+            </div>
+
+            <div class="brand-text">
+                <h2>TorquePoint</h2>
+            </div>
+
+        </div>
+
+        <div class="header-link">
+            <span class="online-dot"></span>
+            Service Center
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="small-title">
+                TORQUEPOINT
+            </div>
+
+            <h1>
+                Vehicle Service Center
+                <span>Management System.</span>
+            </h1>
+
+            <p class="description">
+                Select your vehicle type and model to view available
+                services and prices.
+            </p>
+
+        </section>
+
+
+        <!-- VEHICLE SELECTION -->
+        <div class="filter-box">
+
+            <!-- VEHICLE TYPE -->
+            <div class="form-group">
+
+                <label for="vehicleType">
+                    1. Select Vehicle Type
+                </label>
+
+                <select id="vehicleType">
+
+                    <option value="">
+                        -- Select Vehicle Type --
+                    </option>
+
+                    <option value="car">
+                        Car
+                    </option>
+
+                    <option value="van">
+                        Van
+                    </option>
+
+                    <option value="suv">
+                        SUV
+                    </option>
+
+                    <option value="motorcycle">
+                        Motorcycle
+                    </option>
+
+                    <option value="truck">
+                        Truck
+                    </option>
+
+                    <option value="bus">
+                        Bus
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- VEHICLE MODEL -->
+            <div class="form-group">
+
+                <label for="vehicleModel">
+                    2. Select Vehicle Model
+                </label>
+
+                <select id="vehicleModel">
+
+                    <option value="">
+                        -- Select Vehicle Model --
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- FIND SERVICES BUTTON -->
+            <button
+                type="button"
+                onclick="filterServices()">
+
+                Find Services
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- SERVICE RESULTS -->
+        <div
+            id="serviceResults"
+            class="service-results">
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div>
+            © 2026 TorquePoint Inc.
+        </div>
+
+        <div class="footer-links">
+
+            <span>Privacy</span>
+            <span>Terms</span>
+            <span>Status</span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="services.js"></script>
+
+</body>
+
+</html>
