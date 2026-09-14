@@ -1,0 +1,764 @@
+/*TORQUEPOINT VEHICLE SERVICE MANAGEMENT SYSTEM*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255, 174, 0, 0.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(37, 99, 235, 0.10),
+            transparent 30%
+        ),
+        #080d1c;
+
+    color: #ffffff;
+}
+
+/* ---------- PAGE ---------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------HEADER------------*/
+
+.top-header {
+
+    width: 100%;
+
+    padding: 24px 5%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: rgba(5, 9, 20, 0.85);
+}
+
+/* ---------- BRAND ---------- */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.brand-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 12px;
+
+    background: #ffad00;
+
+    color: #111827;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 0 22px rgba(255, 173, 0, 0.35);
+}
+
+.brand-text h2 {
+
+    font-size: 21px;
+
+    letter-spacing: 2px;
+
+    color: #ffffff;
+}
+
+.brand-text p {
+
+    margin-top: 3px;
+
+    font-size: 11px;
+
+    color: #8993a6;
+
+    letter-spacing: 0.8px;
+}
+
+/* HEADER STATUS */
+
+.header-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 25px;
+
+    color: #aeb6c5;
+
+    font-size: 13px;
+}
+
+.online-dot {
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #ffad00;
+
+    box-shadow:
+        0 0 9px rgba(255, 173, 0, 0.7);
+}
+
+
+/* MAIN CONTAINER */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 55px auto;
+
+    flex: 1;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+/* ---------- SMALL TITLE ---------- */
+
+.small-title {
+
+    display: inline-block;
+
+    padding: 8px 17px;
+
+    border: 1px solid rgba(255, 173, 0, 0.35);
+
+    border-radius: 25px;
+
+    color: #ffb000;
+
+    background: rgba(255, 173, 0, 0.07);
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ---------- MAIN HEADING ---------- */
+
+.hero h1 {
+
+    font-size: 45px;
+
+    line-height: 1.12;
+
+    color: #ffb000;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #ffb000;
+
+    font-style: italic;
+}
+
+
+/* ---------- DESCRIPTION ---------- */
+
+.description {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #9da7b8;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* FILTER BOX  */
+
+.filter-box {
+
+    background: #ffffff;
+
+    color: #111827;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: end;
+
+    gap: 22px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.28);
+
+    margin-bottom: 40px;
+}
+
+
+/*  FORM GROUP */
+
+.form-group {
+
+    flex: 1;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #172033;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/*  SELECT BOX */
+
+.form-group select {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d4d8df;
+
+    border-radius: 9px;
+
+    background: #f7f8fa;
+
+    color: #172033;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.form-group select:hover {
+
+    border-color: #ffb000;
+}
+
+
+.form-group select:focus {
+
+    outline: none;
+
+    border-color: #ffb000;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 176, 0, 0.12);
+}
+
+
+/* FIND SERVICES BUTTON */
+
+.filter-box > button {
+
+    height: 48px;
+
+    min-width: 165px;
+
+    padding: 0 22px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #080d1c;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        0.25s ease;
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+.filter-box > button span {
+
+    color: #ffb000;
+
+    font-size: 19px;
+
+    margin-left: 6px;
+}
+
+
+.filter-box > button:hover {
+
+    background: #111827;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.28);
+}
+
+
+/* SERVICE RESULTS */
+
+.service-results {
+
+    margin-top: 20px;
+}
+
+
+/* RESULT TITLE */
+
+.result-title {
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    margin-bottom: 22px;
+
+    padding-left: 15px;
+
+    border-left: 4px solid #ffb000;
+}
+
+
+/* SERVICE CARD */
+
+.service-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            #101827,
+            #0c1424
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-left: 4px solid #ffb000;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-3px);
+
+    border-left-color: #ffc233;
+
+    box-shadow:
+        0 17px 35px rgba(0, 0, 0, 0.30);
+}
+
+
+/* SERVICE INFORMATION */
+
+.service-info {
+
+    flex: 1;
+}
+
+
+.service-info h3 {
+
+    color: #ffb000;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+
+.service-info p {
+
+    color: #aeb7c7;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+}
+
+
+.service-info strong {
+
+    color: #e6eaf0;
+}
+
+
+/* PRICE SECTION */
+
+.price-section {
+
+    width: 200px;
+
+    padding-left: 20px;
+
+    text-align: center;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.price-label {
+
+    color: #8f9aaa;
+
+    font-size: 13px;
+}
+
+
+.price {
+
+    color: #ffb000;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    margin: 8px 0 15px;
+}
+
+
+/* BOOK BUTTON */
+
+.book-button {
+
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ffb000;
+
+    color: #111827;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.book-button:hover {
+
+    background: #ffc233;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 176, 0, 0.20);
+}
+
+
+/* MESSAGE */
+
+.message {
+
+    background: #101827;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-left: 4px solid #ffb000;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    color: #aeb7c7;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.20);
+}
+
+
+/* FOOTER */
+
+.footer {
+
+    width: 100%;
+
+    padding: 22px 5%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: rgba(5, 9, 20, 0.85);
+
+    color: #7f8a9d;
+
+    font-size: 13px;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.footer-links span {
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.footer-links span:hover {
+
+    color: #ffb000;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 750px) {
+
+    .top-header {
+
+        padding: 20px;
+
+    }
+
+
+    .header-link {
+
+        display: none;
+
+    }
+
+
+    .container {
+
+        width: 92%;
+
+        margin: 35px auto;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .description {
+
+        font-size: 14px;
+
+    }
+
+
+    .filter-box {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 22px;
+
+    }
+
+
+    .filter-box > button {
+
+        width: 100%;
+
+    }
+
+
+    .service-card {
+
+        flex-direction: column;
+
+    }
+
+
+    .price-section {
+
+        width: 100%;
+
+        padding-left: 0;
+
+        padding-top: 20px;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    }
+
+
+    .footer {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 450px) {
+
+    .brand-text h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    .brand-icon {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 21px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .small-title {
+
+        font-size: 9px;
+
+    }
+
+}
