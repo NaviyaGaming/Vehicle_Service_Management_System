@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
@@ -78,10 +77,13 @@
             opacity: 0.7;
         }
 
-        .loader-bolt {
-            font-size: 28px;
-            color: var(--accent);
-            filter: drop-shadow(0 0 8px var(--accent-glow));
+        /* Custom Logo Image Styling */
+        .loader-logo-img {
+            width: 45px; /* Adjust size to fit inside the rings */
+            height: auto;
+            position: relative;
+            z-index: 3;
+            filter: drop-shadow(0 0 8px var(--accent-glow)); /* Adds a nice glow to the logo */
             animation: pulse 1.5s ease-in-out infinite;
         }
 
@@ -142,9 +144,12 @@
     <div class="loader-logo-wrap">
         <div class="loader-ring"></div>
         <div class="loader-ring secondary"></div>
-        <i class="fa-solid fa-bolt loader-bolt"></i>
+        <!-- Replaced the Font Awesome icon with your custom logo -->
+        <img src="logo.png" alt="Torque Point Logo" class="loader-logo-img">
     </div>
+    
     <div class="loader-brand">TORQUE POINT</div>
+    
     <div class="loader-bar-container">
         <div class="loader-bar" id="loader-bar"></div>
     </div>
